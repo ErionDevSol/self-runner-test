@@ -6,7 +6,7 @@ cd actions-runner
 
 # Grab a runner registration token
 REGISTRATION_TOKEN=$(curl -s -X POST \
-    -H "Authorization: token ${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}" \
+    -H "Authorization: token ${token removed}" \
     "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/runners/registration-token" | jq -r .token)
 
 UNIQUE_ID=$(uuidgen)
